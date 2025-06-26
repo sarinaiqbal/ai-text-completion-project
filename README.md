@@ -1,5 +1,5 @@
 # AI Text Completion Project
-This project is an interactive AI text completion app powered by Cohere’s API. It allows users to input various prompts, adjust the length of tokens to be generated, regulate the level of randomness, and generate test-based responses. 
+This project is an interactive AI text completion app powered by Cohere’s API. It allows users to input various prompts, adjust the length of tokens to be generated, regulate the level of randomness, and generate text-based responses. 
 
 ## Setup
 1. Clone the repository
