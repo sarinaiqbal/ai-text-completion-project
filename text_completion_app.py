@@ -17,8 +17,7 @@ def gen_text(prompt, temperature=0.7, max_tokens=150):
           model='command', # model type
           prompt=prompt, # input prompt
           max_tokens=max_tokens, # max number of tokens to generate
-          temperature=temperature, # level of randomness
-          stop_sequences=["\n"] # stop generating when newline encountered
+          temperature=temperature # level of randomness
         )
         return response.generations[0].text.strip() # return response
     except Exception as e:
