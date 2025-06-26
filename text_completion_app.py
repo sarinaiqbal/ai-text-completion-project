@@ -28,7 +28,7 @@ def main():
     print("Welcome to the AI-Powered Text Completion Program!")
     while True:
         prompt = input("Enter your prompt here: ").strip()
-        # Exit program if command == exit
+        # Exit program if user command == exit
         if prompt.lower() == 'exit': 
             print("Exiting the program.")
             break
@@ -42,12 +42,12 @@ def main():
         try: # Ask user input for max_tokens and temperature
             max_tokens = int(input("Max tokens: "))
             temperature = float(input("Temperature (0.0 to 1.0): "))
-            # Raise error if temperature out of range
+            # Raise error if temperature is out of range
             if temperature<0.0 or temperature>1.0:
                 raise ValueError("Temperature should be between 0.0 and 1.0.")
         except ValueError as e:
             print(f"Error: {e}")
-            # In case of error, use default values for max_tokens: 150 and temperature=0.7
+            # In case of error, use default values for max_tokens= 150 and temperature=0.7
             print("Using default values for task completion: max_tokens: 150, temperature=0.7")
             temperature=0.7
             max_tokens=150
